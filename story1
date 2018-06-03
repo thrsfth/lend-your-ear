@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		KAWAII METAL
+	</head>
+	<body>
+		<video autoplay muted id="japanVid" >
+		 	<source id="vid" src="./01/30secs.mp4" type="video/mp4"/>
+		</video>
+	</body>
+</html>

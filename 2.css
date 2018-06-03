@@ -1,0 +1,85 @@
+html, body{
+  margin: auto;
+  height: 100%;
+}
+
+html {
+  background-color: #44ec86;
+}
+
+body {
+  /*background-color: black;*/
+  /*background-image: url("./01/30secs.gif");*/
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*z-index: -100;*/
+}
+
+#fbody{
+	height: 100vh;
+	z-index: -100;
+}
+
+#franceVid {
+	position: absolute;
+	bottom: 0px; 
+	left: 0px; 
+	min-width: 100%; 
+	min-height: 100%;  
+	z-index: -90; 
+	overflow: hidden;
+}
+
+#info {
+	z-index: 1;
+  	position: absolute;
+    left: 50px;
+}
+
+#icon {
+	max-height: 90vh;
+	display: inline-block;
+	
+}
+
+#imageBox {
+	position: fixed;
+	bottom: 0;
+	left: 35vw;
+	max-height: 90vh;
+	width: 70%;
+	opacity:0;
+}
+
+#title{
+	font-family: "rift-soft";
+	font-weight: bold;
+  	font-size: 40pt;
+  	color: #44ec86;
+  	margin-bottom: 0;
+}
+
+#genre{
+	font-family: 'Roboto Mono', monospace;
+  	font-size: 20pt;
+  	color: #44ec86;
+  	margin-top: 0;
+}
+
+#prompt, #hold{
+	font-family: 'Roboto Mono', monospace;
+  	color: #44ec86;
+  	display:inline-block;
+  	position: absolute;
+}
+
+#prompt {
+	top:20%;
+	font-size:20pt;
+}
+
+#hold {
+	top:32%;
+	font-size: 15pt;
+}

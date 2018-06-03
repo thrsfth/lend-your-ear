@@ -1,0 +1,87 @@
+html, body{
+  margin: auto;
+  height: 100%;
+}
+
+html {
+  background-color: #f51205;;
+}
+
+body {
+  /*background-color: black;*/
+  /*background-image: url("./01/30secs.gif");*/
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*z-index: -100;*/
+}
+
+#fbody{
+	height: 100vh;
+	z-index: -100;
+}
+
+#japanVid {
+	position: absolute;
+	bottom: 0px; 
+	left: 0px; 
+	min-width: 100%; 
+	min-height: 100%;  
+	z-index: -90; 
+	overflow: hidden;
+}
+
+#info {
+	z-index: 1;
+  	position: absolute;
+    left: 50px;
+}
+
+#icon {
+	max-height: 90vh;
+	display: inline-block;
+	opacity: 0;
+	
+}
+
+#imageBox {
+	position: fixed;
+	bottom: 0;
+	left: 35vw;
+	max-height: 90vh;
+	width: 70%;
+}
+
+#title{
+	font-family: "rift-soft";
+	font-weight: bold;
+  	font-size: 40pt;
+  	color: #f51205;
+  	margin-bottom: 0;
+}
+
+#genre{
+	font-family: 'Roboto Mono', monospace;
+  	font-size: 20pt;
+  	color: #f51205;
+  	margin-top: 0;
+}
+
+#prompt, #hold{
+	font-family: 'Roboto Mono', monospace;
+  	color: white;
+  	display:inline-block;
+  	font-size: 20pt;
+  	position: absolute;
+  	left: 40%;
+  	opacity: 0;
+
+}
+
+#prompt {
+	top:20%;
+}
+
+#hold {
+	top:30%;
+}

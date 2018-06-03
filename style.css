@@ -1,0 +1,234 @@
+html, body{
+  margin: auto;
+  height: 100%
+  
+}
+
+
+body {
+  background-color: #ece9e5;
+  /*background-image: url("./gifs/home.gif");*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -100;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  position: absolute;
+  top: 20%;
+  z-index: -10;
+}
+
+h1 {
+  text-align: center;
+  font-family: "rift-soft";
+  font-size: 120pt;
+  font-style: italic;
+  margin-bottom:0;
+}
+
+#load, #intro{
+  text-align: center;
+  
+  font-size: 14pt;
+  color: #0000e0;
+}
+
+#intro {
+  line-height: 2;
+  font-weight: medium;
+  font-style: italic;
+  color: #f7e122;
+  font-size: 18pt;
+  background-color: #0000e0;
+  width:600px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#load{
+  position: absolute;
+  bottom: -15vh;
+}
+
+#homeText {
+  
+}
+
+#homegif{
+  width:100%;
+  margin:auto;
+}
+
+#bg {
+  z-index: -100;
+}
+
+#text{
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+
+#loadBar {
+  width: 247px;
+  margin:auto;
+}
+
+#progressBar {
+  width: 0%;
+  height: 2px;
+  background-color: #0000e0;
+  opacity: 1;
+}
+
+
+#button {
+  background-color: blue;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+#indexBox, #aboutBox{ 
+  width: 100vw;
+  height: 100vh;
+  position:fixed;
+  top:0;
+  display:none;
+}
+
+#indexBox{
+  z-index: 100;
+  background-color :rgba(255,255,255, 0.8);
+}
+
+#indexBar{
+  position:fixed;
+  top:0;
+  min-width: 28%;
+  min-height: 100%;
+  background-color: #0000e0;
+}
+
+.indexBtn{
+  position:absolute;
+  top:50px;
+  left:70px;
+}
+
+.indexBtn:hover{
+  cursor:pointer;
+}
+
+.indexText{
+  text-align: left;
+  
+  font-size: 22pt;
+  color: #f7e122;
+  margin-top: 0;
+
+}
+
+ul, p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+ul, #note{
+  padding: 0;
+  
+  font-size: 15pt;
+  color: rgba(255,255,255, 0.5);
+  max-width: 80%;
+  margin-top: 50px;
+}
+
+#note{
+  line-height: 23pt;
+  font-size: 12pt;
+  color:white;
+}
+
+li {
+   margin:0 0 40px 0;   
+}
+
+#indexContent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position:absolute;
+  top:41px;
+  left:150px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  font-weight: bold;
+  font-style: italic;
+  color: #f7e122;
+}
+
+#aboutShow{
+  transform: rotate(270deg);
+  position:absolute;
+  bottom:150px;
+  margin:0;
+  color: #0000e0;
+  font-weight: bold;
+}
+
+#aboutShow:hover{
+  font-style: italic;
+  color: #f7e122;
+  background-color: #0000e0;
+  cursor:pointer;
+}
+
+#aboutBox{
+  z-index: 200;
+  background-color: #0000e0;
+}
+
+#aboutContent{
+  max-width: 30%;
+  margin: auto;
+  margin-top: 300px;
+  color: white;
+  line-height: 28px ;
+}
+
+#aboutTitle{
+  font-size: 20pt;
+  color: #f7e122;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#aboutHide{
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  cursor: pointer;
+}
