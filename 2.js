@@ -9,8 +9,8 @@ var promptShow;
 
 $(document).ready(function(){
     gifBye = setTimeout(toImg, 3400);
-    /*
 	imgShow = setTimeout(show, 3100);
+    /*
     //promptShow = setTimeout(show("prompt"), 3100);
     //holdShow = setTimeout(show("hold"), 6000);
 
@@ -38,7 +38,6 @@ $(document).keypress(function(event){
     }
 });
 
-/*
 function show() {
     var x = document.getElementById("imageBox"); 
     var opacity = 0;
@@ -53,6 +52,8 @@ function show() {
         }
     }
 }
+
+/*
 
 function redirect() {
     window.location.assign("http://localhost:8000/story1.html");
