@@ -102,7 +102,7 @@ function whats(){
 
 
 function redirect() {
-    window.location.assign("http://localhost:8000/story1.html");
+    window.location.assign("http://localhost:8000/story2.html");
 }
 
 /*

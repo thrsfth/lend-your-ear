@@ -7,6 +7,7 @@ $(document).ready(function(){
 
 	$("#closeBtn").click(function(event) {
 		console.log("close");
+		window.stop();
 		window.location.assign("http://localhost:8000/2.html");
 	});
 

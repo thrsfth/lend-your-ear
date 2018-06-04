@@ -1,17 +1,19 @@
 html, body{
-  margin: auto;
-  height: 100%;
+ 	margin: auto;
+ 	height: 100%;
 }
 
-body{
-	display: flex;
+#closing{
+	display: none;
+	flex-direction: column;
 	justify-content: center;
   	align-items: center;
+  	z-index: 50;
 }
 
 #vid {
 	position: absolute;
-	bottom: 0px; 
+	top: 0px; 
 	left: 0px; 
 	min-width: 100%; 
 	min-height: 100%;  
@@ -20,9 +22,19 @@ body{
 }
 
 #closeBtn{
-  position: absolute;
-  top: 100px;
-  right: 100px;
-  cursor: pointer;
-  z-index: 100;
+ 	position: absolute;
+ 	top: 100px;
+ 	right: 100px;
+ 	cursor: pointer;
+ 	z-index: 100;
+}
+
+p{
+	font-family: 'Roboto Mono', monospace;
+  	font-size: 20pt;
+  	color: #f51205;
+  	margin:auto;
+  	margin-top: 20vh;
+  	text-align:center;
+  	margin-bottom: 100px;
 }

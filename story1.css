@@ -7,8 +7,8 @@ html, body{
 	display: none;
 	flex-direction: column;
 	justify-content: center;
-  	align-items: center;
-  	z-index: 50;
+  align-items: center;
+  z-index: 50;
 }
 
 #vid {
@@ -30,11 +30,11 @@ html, body{
 }
 
 p{
-	font-family: 'Roboto Mono', monospace;
-  	font-size: 20pt;
-  	color: #f51205;
-  	margin:auto;
-  	margin-top: 20vh;
-  	text-align:center;
-  	margin-bottom: 100px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20pt;
+  color: #f51205;
+  margin:auto;
+  margin-top: 20vh;
+  text-align:center;
+  margin-bottom: 100px;
 }
