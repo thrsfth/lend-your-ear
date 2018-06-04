@@ -29,20 +29,12 @@ $(document).ready(function(){
 
 });
 
-function home(){
-	console.log("you're home");
-	//reload("wavy");
-	//$("body").css("background-image", "url('./gifs/home.gif')");
-}
-
-
 
 $(document).keypress(function(event){
 	if(event.keyCode == 32){
 		if((Date.now() - time) > 3000) {
 			blinking();
 		} else {
-			console.log("not yet");
 			countPresses();
 		}
 	}
@@ -56,10 +48,8 @@ $(document).keyup(function(event){
 
 function countPresses() {
 	if (start) {
-		console.log("calling countpress #1");
 		start = false;
 		time = Date.now();
-		console.log(time);
 		load();
 	}
 	numpresses++;
@@ -68,8 +58,6 @@ function countPresses() {
 }
 
 function clearPresses() {
-	console.log("calling clearPresses");
-	console.log(Date.now());
 	start = true;
 	numpresses = 0;
 	var diff = (Date.now()) - time;
@@ -86,9 +74,6 @@ function clearPresses() {
 		function move(){
 			console.log("move here");
 			$("body").css("background-color",colors[random]);
-			//window.location.replace("localhost:8000/1.html");
-			//window.location.href = 'localhost:8000/1.html';
-			//document.location.href = 'localhost:8000/1.html',true;
 			window.location.assign("http://localhost:8000/" + random + ".html");
 		}
 		//$("#text").html("load sth here");
@@ -101,9 +86,7 @@ function clearPresses() {
 function blinking(){
 	if(!fivesecs){
 		fivesecs = true;
-		console.log("blink2");
 		//var video = document.getElementById('bgVideo');
-		//video.playbackRate = 2.0;
 		reload("release");
 		$("#text").html("release space to start");
 		barBlink();
@@ -112,7 +95,6 @@ function blinking(){
 
 
 function load(){
-	console.log("load!");
 	reload("load");
 	barLoad();
 }
@@ -143,19 +125,15 @@ function barBlink(){
 	var bar = document.getElementById("progressBar"); 
     barTimer = setInterval(blink, 500);
     function blink() {
-    	console.log("blink");
         if (bar.style.opacity == "0") {
-        	console.log("0");
             bar.style.opacity = "1";
         } else {
-        	console.log("1")
             bar.style.opacity = "0"; 
         }
     }
 }
 
 function reload(string){
-	console.log(string);
 	var video = document.getElementById('bgVideo');
 	video.src = './vid/' + string +'.mp4';
 	video.muted = false;

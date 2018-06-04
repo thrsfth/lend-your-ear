@@ -27,7 +27,6 @@ $(document).keypress(function(event){
         window.location.assign("http://localhost:8000/index.html");
     }
     if(event.keyCode == (egg[num] || eggB[num])){
-        console.log("sequence"+num);
         var dis = document.getElementById(letter[num]);
         dis.style.opacity = 1;
         if(num%2 == 1){
@@ -44,7 +43,6 @@ $(document).keypress(function(event){
 });
 
 function visible(string) {
-    console.log(string+" invisible");
     $(string).removeClass("transp");
 }
 
@@ -90,7 +88,6 @@ function whats(){
             if (x[i].style.opacity >= .5) {
                 clearInterval(whatshowing);
             } else {
-                console.log(x[i]);
                 x[i].style.opacity = opacity;
             }
             if(i==7){
