@@ -40,7 +40,7 @@ body {
 #icon {
 	max-height: 90vh;
 	display: inline-block;
-	
+	opacity:0;
 }
 
 #imageBox {
@@ -49,7 +49,6 @@ body {
 	left: 35vw;
 	max-height: 90vh;
 	width: 70%;
-	opacity:0;
 }
 
 #title{
@@ -62,24 +61,42 @@ body {
 
 #genre{
 	font-family: 'Roboto Mono', monospace;
-  	font-size: 20pt;
+  	font-size: 18pt;
   	color: #44ec86;
   	margin-top: 0;
 }
 
-#prompt, #hold{
+.text {
 	font-family: 'Roboto Mono', monospace;
   	color: #44ec86;
   	display:inline-block;
+  	font-size: 18pt;
   	position: absolute;
+  	left:40%;
+}
+
+.hide{
+	opacity:0;
 }
 
 #prompt {
 	top:20%;
-	font-size:20pt;
 }
 
+
+.what {
+	top:30%;
+}
+
+.dis{
+	opacity: 0;
+}
+/*
+.transp{
+	opacity:.5;
+}
+*/
+
 #hold {
-	top:32%;
-	font-size: 15pt;
+	top:40%;
 }

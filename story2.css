@@ -3,12 +3,10 @@ html, body{
   height: 100%;
 }
 
-#closing{
+body{
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
   	align-items: center;
-  	z-index: 50;
 }
 
 #vid {
@@ -27,14 +25,4 @@ html, body{
   right: 100px;
   cursor: pointer;
   z-index: 100;
-}
-
-p{
-	font-family: 'Roboto Mono', monospace;
-  	font-size: 20pt;
-  	color: #f51205;
-  	margin:auto;
-  	margin-top: 20vh;
-  	text-align:center;
-  	margin-bottom: 100px;
 }

@@ -2,44 +2,55 @@ var imgShow;
 var toVideo;
 var showing;
 var fadedin = false;
-var click = 0;
 var bgChange;
 var gifBye;
 var promptShow;
+var egg = [119,104,97,116,116,104,101,102];
+var letter = ["w","h","a","t","t2","h2","e","f"];
+var eggB = [87,72,65,84,84,72,69,70];
+var sequence = false;
+var num = 0;
+var whatShow;
+var whatshowing;
+var hshowing;
 
 $(document).ready(function(){
-    gifBye = setTimeout(toImg, 3400);
+    gifBye = setTimeout(toImg, 3300);
 	imgShow = setTimeout(show, 3100);
-    /*
-    //promptShow = setTimeout(show("prompt"), 3100);
-    //holdShow = setTimeout(show("hold"), 6000);
+    whatShow = setTimeout(whats,3100);
+    promptShow = setTimeout(hold, 7000);
 
-	$("#icon").click(function(event) {
-        if(fadedin){
-            click++;
-            //flash();
-            console.log(click);
-        	//$("#image").attr('src', './01/after.png');
-            if(click%2 == 0 && click <=6){
-                $("#icon").attr('src', './01/' + click + '.png');
-            }
-            if(click == 6){
-                console.log("redirect" + click);
-                toVideo = setTimeout(redirect,1000);
-            }
-        }
-    });
-*/
 });
 
 $(document).keypress(function(event){
     if(event.keyCode == 32){
         window.location.assign("http://localhost:8000/index.html");
     }
+    if(event.keyCode == (egg[num] || eggB[num])){
+        console.log("sequence"+num);
+        var dis = document.getElementById(letter[num]);
+        dis.style.opacity = 1;
+        if(num%2 == 1){
+            $("#icon").attr('src', './02/' + letter[num] + '.png');
+        } else {
+        $("body").css("background-image", "url('./02/bg-"+letter[num]+".png')");
+        }
+        num++;
+    }
+    if(num==7){
+        var go = setTimeout(redirect, 2000);
+    }
+
 });
 
+function visible(string) {
+    console.log(string+" invisible");
+    $(string).removeClass("transp");
+}
+
 function show() {
-    var x = document.getElementById("imageBox"); 
+    var x = document.getElementById("icon"); 
+    var y = document.getElementById("prompt");
     var opacity = 0;
     showing = setInterval(fadein, 30);
     function fadein() {
@@ -48,17 +59,53 @@ function show() {
             clearInterval(showing);
         } else {
             opacity+=.01; 
-            x.style.opacity = opacity; 
+            x.style.opacity = opacity;
+            y.style.opacity = opacity; 
         }
     }
 }
 
-/*
+function hold(){
+    var x = document.getElementById("hold");
+    var opacity = 0;
+    hshowing = setInterval(fadein, 30);
+    function fadein() {
+        if (x.style.opacity >= 1) {
+            fadedin = true;
+            clearInterval(hshowing);
+        } else {
+            opacity+=.01; 
+            x.style.opacity = opacity;
+        }
+    }
+}
+
+
+function whats(){
+    var x = document.getElementsByClassName("dis");
+    var opacity = 0;
+    whatshowing = setInterval(fadein, 30);
+    function fadein() {
+        for(var i = 0; i<8;i++){
+            if (x[i].style.opacity >= .5) {
+                clearInterval(whatshowing);
+            } else {
+                console.log(x[i]);
+                x[i].style.opacity = opacity;
+            }
+            if(i==7){
+                opacity+=.01; 
+            }
+        }
+    }
+}
+
 
 function redirect() {
     window.location.assign("http://localhost:8000/story1.html");
 }
 
+/*
 function flash(){
     $("body").css("background-image", "url('./01/flash.gif')");
     bgChange = setTimeout(resetBG,600);
