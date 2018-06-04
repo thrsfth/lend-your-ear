@@ -215,7 +215,7 @@ a:hover{
 #aboutContent{
   max-width: 30%;
   margin: auto;
-  margin-top: 300px;
+  margin-top: 200px;
   color: white;
   line-height: 28px ;
 }
@@ -224,7 +224,7 @@ a:hover{
   font-size: 20pt;
   color: #f7e122;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 #aboutHide{

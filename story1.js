@@ -3,7 +3,6 @@ var showSpotify;
 $(document).ready(function(){
 	var video = document.getElementById('vid');
 	video.muted = false;
-	$("#closing").hide();
 	showSpotify = setTimeout(closing, 218000);
 
 	$("#closeBtn").click(function(event) {
@@ -15,5 +14,6 @@ $(document).ready(function(){
 });
 
 function closing(){
-	$("#closing").show();
+	var box = document.getElementById("closing");
+	box.style.display = "flex";
 }
