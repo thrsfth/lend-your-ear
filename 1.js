@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 $(document).keypress(function(event){
     if(event.keyCode == 32){
-        window.location.assign("./index.html");
+        window.location.assign("http://lendyourear.com/index.html");
     }
 });
 
