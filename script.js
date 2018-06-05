@@ -73,7 +73,7 @@ function clearPresses() {
 		function move(){
 			console.log("move here");
 			$("body").css("background-color",colors[random]);
-			window.location.assign("http://localhost:8000/" + random + ".html");
+			window.location.assign("http://lendyourear.com/" + random + ".html");
 		}
 		//$("#text").html("load sth here");
 		fivesecs = !fivesecs;

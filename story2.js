@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 	$("#closeBtn").click(function(event) {
 		window.stop();
-		window.location.assign("http://localhost:8000/2.html");
+		window.location.assign("http://lendyourear.com/2.html");
 	});
 
 });

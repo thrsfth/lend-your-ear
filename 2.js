@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 $(document).keypress(function(event){
     if(event.keyCode == 32){
-        window.location.assign("http://localhost:8000/index.html");
+        window.location.assign("http://lendyourear.com/index.html");
     }
     if(event.keyCode == (egg[num] || eggB[num])){
         var dis = document.getElementById(letter[num]);
@@ -99,7 +99,7 @@ function whats(){
 
 
 function redirect() {
-    window.location.assign("http://localhost:8000/story2.html");
+    window.location.assign("http://lendyourear.com/story2.html");
 }
 
 /*

@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 $(document).keypress(function(event){
     if(event.keyCode == 32){
-        window.location.assign("http://localhost:8000/index.html");
+        window.location.assign("./index.html");
     }
 });
 
@@ -55,7 +55,7 @@ function show() {
 }
 
 function redirect() {
-    window.location.assign("http://localhost:8000/story1.html");
+    window.location.assign("http://lendyourear.com/story1.html");
 }
 
 function flash(){
