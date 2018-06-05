@@ -32,7 +32,7 @@ $(document).keypress(function(event){
         if(num%2 == 1){
             $("#icon").attr('src', './02/' + letter[num] + '.png');
         } else {
-        $("body").css("background-image", "url('./02/bg-"+letter[num]+".png')");
+        $("body").css("background-image", "url('./02/background"+letter[num]+".png')");
         }
         num++;
     }
