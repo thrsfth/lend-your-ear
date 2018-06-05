@@ -30,9 +30,9 @@ $(document).keypress(function(event){
         var dis = document.getElementById(letter[num]);
         dis.style.opacity = 1;
         if(num%2 == 1){
-            $("#icon").attr('src', './02/' + letter[num] + '.png');
+            $("#icon").attr('src', './02/' + letter[num] + '.PNG');
         } else {
-        $("body").css("background-image", "url('./02/background"+letter[num]+".png')");
+        $("body").css("background-image", "url('./02/background"+letter[num]+".PNG')");
         }
         num++;
     }
