@@ -10,7 +10,6 @@ var random = Math.floor((Math.random() * 2) + 1);
 
 
 $(document).ready(function(){
-	home();
 	$("#indexShow").click(function(event) {
 		$("#indexBox").show();
 	});
