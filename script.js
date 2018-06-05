@@ -78,7 +78,7 @@ function clearPresses() {
 		//$("#text").html("load sth here");
 		fivesecs = !fivesecs;
 	} else {
-		home();
+		reload("wavy")
 		barZero();
 	}
 }
