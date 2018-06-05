@@ -7,13 +7,12 @@ html, body{
 
 body {
   background-color: #ece9e5;
-  /*background-image: url("./gifs/home.gif");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#bgVideo {
+#bgVideo, #staticBg {
   position: fixed;
   right: 0;
   bottom: 0;

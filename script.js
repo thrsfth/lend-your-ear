@@ -60,7 +60,6 @@ function clearPresses() {
 	start = true;
 	numpresses = 0;
 	var diff = (Date.now()) - time;
-	$("#counter1").html("time: " + diff);
 	if(fivesecs){
 		barZero();
 		var video = document.getElementById('bgVideo');
@@ -71,11 +70,9 @@ function clearPresses() {
 		$("#aboutShow").hide();
 		var redirect = setTimeout(move, 6000);
 		function move(){
-			console.log("move here");
 			$("body").css("background-color",colors[random]);
 			window.location.assign("http://lendyourear.com/" + random + ".html");
 		}
-		//$("#text").html("load sth here");
 		fivesecs = !fivesecs;
 	} else {
 		reload("wavy")
@@ -85,7 +82,6 @@ function clearPresses() {
 function blinking(){
 	if(!fivesecs){
 		fivesecs = true;
-		//var video = document.getElementById('bgVideo');
 		reload("release");
 		$("#text").html("release space to start");
 		barBlink();
