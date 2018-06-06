@@ -37,7 +37,7 @@ $(document).keypress(function(event){
         num++;
     }
     if(num==7){
-        var go = setTimeout(redirect, 2000);
+        var go = setTimeout(redirect, 2500);
     }
 
 });
