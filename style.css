@@ -190,9 +190,6 @@ a:hover{
   color: #f7e122;
 }
 
-a#aboutP{
-  text-decoration: underline;
-}
 
 #aboutShow{
   transform: rotate(270deg);

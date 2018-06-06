@@ -1,6 +1,7 @@
 html, body{
  	margin: auto;
  	height: 100%;
+ 	background-color: #383d49;
 }
 
 #closing{
@@ -31,8 +32,8 @@ html, body{
 
 p{
 	font-family: 'Roboto Mono', monospace;
-  	font-size: 20pt;
-  	color: ##44ec86;
+  	font-size: 20pt;s
+  	color: #44ec86;
   	margin:auto;
   	margin-top: 20vh;
   	text-align:center;

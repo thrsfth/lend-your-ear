@@ -1,4 +1,5 @@
 var showSpotify;
+var byeNow;
 
 $(document).ready(function(){
 	var video = document.getElementById('vid');
@@ -15,4 +16,9 @@ $(document).ready(function(){
 function closing(){
 	var box = document.getElementById("closing");
 	box.style.display = "flex";
+	byeNow = setTimeout(gooBye,120000);
+}
+
+function gooBye(){
+	window.location.assign("http://lendyourear.com/");
 }
