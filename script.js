@@ -60,6 +60,8 @@ function clearPresses() {
 	start = true;
 	numpresses = 0;
 	var diff = (Date.now()) - time;
+	time = Date.now();
+	
 	if(fivesecs){
 		barZero();
 		var video = document.getElementById('bgVideo');
@@ -113,6 +115,7 @@ function barZero(){
 	bar.style.width = 0;
 	bar.style.opacity = "1";
 	clearInterval(barTimer);
+
 }
 
 function barBlink(){
